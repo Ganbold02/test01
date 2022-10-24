@@ -1,0 +1,40 @@
+.container{
+    display:none;
+    /* flex-direction: row-reverse; */
+    border: 2px solid gray;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+}
+
+.container div{
+    border: 2px solid blue;
+    width: 300px;
+    height: 25vh;
+}
+.cont{
+    display: flex;
+    border: 2px dotted blue;
+    justify-content: space-around;
+    height: 50px;
+    align-items: stretch;
+}
+
+.div1{
+    border: 1px solid red;
+    background-color: red;
+    width: 25%;
+    height: 25px;
+}
+.div2{
+    border: 1px solid blue;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+}
+.div3{
+    border: 1px solid green;
+    background-color: green;
+    width: 25%;
+    height: 75px;
+}
