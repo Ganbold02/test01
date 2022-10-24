@@ -1,0 +1,132 @@
+/* Web Fonts ----------------------- */
+
+
+/* Base Styles --------------------- */
+@font-face {
+  font-family: 'abolition';
+  src: url('../fonts/abolition-regular-webfont.ttf') format('woff');
+
+  /* font-family: 'roboto';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') ;
+  src: url('../fonts/roboto/Roboto-Italic.ttf'); */
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.25em; /* 20px on most screens */
+}
+img {
+  width: 100%; /* responsive images */
+}
+
+
+/* Main Styles --------------------- */
+header {
+  text-align: center;
+  padding: 25vh 0;
+  color: white;
+  background-color: coral;
+}
+h1{
+  font-family: 'abolition';
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-shadow: 10px 10px 10px rgba(125, 125, 125, 4),-10px -10px 10px rgba(0, 0, 0, 4);
+}
+
+
+h1::after{
+  content: '\2193';
+  display:block;
+}
+.intro{
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+#top{
+  padding: 25vh 0;
+  /* background-image: url('../img/mountains.jpg') center / cover #f3753b; */
+  background-image: url('../img/mountains.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  /* background-repeat: repeat-x;
+  background-position: 75% 25%; */
+}
+#wildlife{
+  border-top: 12px solid orange;
+  border-radius: 12px 0 0 0;
+  box-shadow: 0 12px 0px rgba(255, 165, 0, 10);
+  width: 75%;
+  margin: 0 auto;
+  padding: 20% 15%;
+  background: url(../img/bear.jpg) center / cover #454959;
+  color: white;
+}
+h2{
+  font-size: 35px;
+ 
+}
+
+.callout {
+  display: block;
+  width: 250px;
+  padding: .25rem 1rem;
+  border-radius: 20px/10px;
+  margin: 1rem auto;
+  box-shadow: 1px 2px 3px rgba(0, 10, 30, 5);
+  background: linear-gradient(to right, #ffcc00 0%, #cc6600 50%);
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+main{
+max-width: 1000px;
+  margin: 0 auto;
+  hyphens: auto;
+}
+.column{
+  display: inline-block;
+  width: 48%;
+  margin: -4px;
+}
+.column:first-child{
+  margin-right: calc(4%-4px);
+  margin-bottom: 0;
+}
+.column{
+  display:inline-block;
+  max-width: 49%;
+  padding: .25rem 1rem;
+  border-radius: 20px/10px;
+  margin: 1rem auto;
+
+}
+.column:nth-child(1){
+  padding: .25rem 1rem;
+  border-radius: 20px/10px;
+}
+.column img{
+  border-radius: 10px;
+}
+
+.column h3{
+  font-family: 'abolition';
+  font-size: 18px;
+  font-weight: 10;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+.column p{
+  font-family: 'abolition';
+  font-size: 16px;
+}
+/* 
+Media Queries ------------------- */
+
